@@ -1,29 +1,11 @@
 {
   "version": 1,
   "skills": {
-    "algorithmic-art": {
-      "source": "anthropics/skills",
-      "sourceType": "github",
-      "skillPath": "skills/algorithmic-art/SKILL.md",
-      "computedHash": "b2ca295de7f9c86c444f1fa21239e22e0eb7013ced1c652169b9402cc96ff744"
-    },
     "brainstorming": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "skillPath": "skills/brainstorming/SKILL.md",
       "computedHash": "8df9b47092524833138b58682d03f2e153a242e550d1693657afdbee0cc9cdb0"
-    },
-    "brandkit": {
-      "source": "Leonxlnx/taste-skill",
-      "sourceType": "github",
-      "skillPath": "skills/brandkit/SKILL.md",
-      "computedHash": "b63012f3c3d21197e0185d3e9cc7ec40c589fb10e0b5a32a561739de31aa3f20"
-    },
-    "canvas-design": {
-      "source": "anthropics/skills",
-      "sourceType": "github",
-      "skillPath": "skills/canvas-design/SKILL.md",
-      "computedHash": "3fa7ea60170023ad8268bf9fd734ea75dd404279a2ef8ddf5abaa1102ad8e5f4"
     },
     "caveman": {
       "source": "mattpocock/skills",
@@ -67,54 +49,6 @@
       "skillPath": "skills/executing-plans/SKILL.md",
       "computedHash": "b41c919caf1bb07fbacb0e29899ac513f9eb11cd4dd695975ad352c2c03cc4d7"
     },
-    "figma-code-connect": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-code-connect/SKILL.md",
-      "computedHash": "97115879461e3fb0766ea31d35a370e47f140c0e2896e33ccdd1f8a693e78358"
-    },
-    "figma-create-new-file": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-create-new-file/SKILL.md",
-      "computedHash": "8013ae97a1d34753bdd916225ef781500e072631ef94f7a38975fc15394f0dc2"
-    },
-    "figma-generate-design": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-generate-design/SKILL.md",
-      "computedHash": "28cc665073d992bab1105b6dd7a3fcd8402e9007da54a2b2619343aa743e3c33"
-    },
-    "figma-generate-diagram": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-generate-diagram/SKILL.md",
-      "computedHash": "94535a994b6af987fe7f313df9835d8f5cb3d96c0f343be5f7c07b06421c1e2e"
-    },
-    "figma-generate-library": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-generate-library/SKILL.md",
-      "computedHash": "6833890132c9b49baad17d272dc26daec984ea191fa2c34653c8e87bf3647168"
-    },
-    "figma-use": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-use/SKILL.md",
-      "computedHash": "ad6ff47710d541d77a0a276ece823bddc785697bbd6efc6a6b72c123c1d8fb78"
-    },
-    "figma-use-figjam": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-use-figjam/SKILL.md",
-      "computedHash": "8dc0ca7d4b1330fe8bb0580f452d55982b5eb1792860f4d178348a261c7a9dc8"
-    },
-    "figma-use-slides": {
-      "source": "figma/mcp-server-guide",
-      "sourceType": "github",
-      "skillPath": "skills/figma-use-slides/SKILL.md",
-      "computedHash": "8ef111b618949def25de537e05a108a56470ec4222b049eb72afd67348e5e71a"
-    },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",
@@ -126,66 +60,6 @@
       "sourceType": "github",
       "skillPath": "skills/finishing-a-development-branch/SKILL.md",
       "computedHash": "932d23af11a3eb2b758f5b1d9aec7b6d28ddd26658328414f87f34dff7179d19"
-    },
-    "flutter-add-integration-test": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-add-integration-test/SKILL.md",
-      "computedHash": "9ead37fef54371fed6ad07a9ba3de7a908135a0867b05baf74c28b7095343999"
-    },
-    "flutter-add-widget-preview": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-add-widget-preview/SKILL.md",
-      "computedHash": "1b59c009558aab7a8e4b7b101fbe535b06054c0672780e9cea7e5c98a9c48dc4"
-    },
-    "flutter-add-widget-test": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-add-widget-test/SKILL.md",
-      "computedHash": "c4f263c59cfe331ef42dba2aa81e25142aa4f7284518907c6b847e04502676b0"
-    },
-    "flutter-apply-architecture-best-practices": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-apply-architecture-best-practices/SKILL.md",
-      "computedHash": "2b1b63214d6b153c50aacd4bbcb76ce91dece449de9e06f477f8aad3163d667f"
-    },
-    "flutter-build-responsive-layout": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-build-responsive-layout/SKILL.md",
-      "computedHash": "f762ea2ee83d4f1f35d9093b41d2520dd024ab80c9539d4860b9ae7f2a4dc6a0"
-    },
-    "flutter-fix-layout-issues": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-fix-layout-issues/SKILL.md",
-      "computedHash": "1aaba922c951159118f9b141788f7bb7b8167bdc0bd5c6f0738ebb90c29b9532"
-    },
-    "flutter-implement-json-serialization": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-implement-json-serialization/SKILL.md",
-      "computedHash": "0eed26f25308d78c6a9036ec936db93342f064d64f2cbac5e0e8648ba6b9db3f"
-    },
-    "flutter-setup-declarative-routing": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-setup-declarative-routing/SKILL.md",
-      "computedHash": "2341440c8bce0f176663695eaa71f9f7d7c967772a1dcd0d833c9778504b227e"
-    },
-    "flutter-setup-localization": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-setup-localization/SKILL.md",
-      "computedHash": "671bf254ca8f3172b6bda5287d9e756e9fd5b49165a815f710c5b707ebaa38f8"
-    },
-    "flutter-use-http-package": {
-      "source": "flutter/skills",
-      "sourceType": "github",
-      "skillPath": "skills/flutter-use-http-package/SKILL.md",
-      "computedHash": "17efcf4da9933afaf9c1d41940bd6b92f1ae73dcae4bf6c59cfe24f7e487ee9f"
     },
     "frontend-design": {
       "source": "anthropics/skills",
@@ -204,12 +78,6 @@
       "sourceType": "github",
       "skillPath": "skills/gpt-tasteskill/SKILL.md",
       "computedHash": "cc8f0c601d8240a124e1d11634351a2be7b8a72fd807c75e5b6bf7afcd5ddee0"
-    },
-    "grill-me": {
-      "source": "mattpocock/skills",
-      "sourceType": "github",
-      "skillPath": "skills/productivity/grill-me/SKILL.md",
-      "computedHash": "784f0dbb7403b0f00324bce9a112f715342777a0daee7bbb7385f9c6f0a170ea"
     },
     "grill-with-docs": {
       "source": "mattpocock/skills",
@@ -234,24 +102,6 @@
       "sourceType": "github",
       "skillPath": "skills/soft-skill/SKILL.md",
       "computedHash": "7db385e4c5370e5a7fca9704a1361b056e4504ea6a03924bb86f33a4f00b5c73"
-    },
-    "image-to-code": {
-      "source": "Leonxlnx/taste-skill",
-      "sourceType": "github",
-      "skillPath": "skills/image-to-code-skill/SKILL.md",
-      "computedHash": "58517b03b2a01f4c9ba65861559d03df931400871bbc200978c975b24bb92c73"
-    },
-    "imagegen-frontend-mobile": {
-      "source": "Leonxlnx/taste-skill",
-      "sourceType": "github",
-      "skillPath": "skills/imagegen-frontend-mobile/SKILL.md",
-      "computedHash": "9ab7f4f6ce66a3cff02bbf5894e5bd5af50bf5d6ef0adffdc88e8fab772fe44f"
-    },
-    "imagegen-frontend-web": {
-      "source": "Leonxlnx/taste-skill",
-      "sourceType": "github",
-      "skillPath": "skills/imagegen-frontend-web/SKILL.md",
-      "computedHash": "65f5ae59fa317567809438310b1c54f78cd133426deb43e4d3d4ca4c8f541628"
     },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
@@ -324,18 +174,6 @@
       "sourceType": "github",
       "skillPath": "skills/neon/SKILL.md",
       "computedHash": "9548e17eaf8b2864f64f7542f0a91f7868227442e3aab8278304bdbb245bb7f3"
-    },
-    "neon-functions": {
-      "source": "neondatabase/agent-skills",
-      "sourceType": "github",
-      "skillPath": "skills/neon-functions/SKILL.md",
-      "computedHash": "6c7f8cee21fc603d9ac1abdf2d570da667103bcace0680ff28ed88b6e1f44a75"
-    },
-    "neon-object-storage": {
-      "source": "neondatabase/agent-skills",
-      "sourceType": "github",
-      "skillPath": "skills/neon-object-storage/SKILL.md",
-      "computedHash": "053dc4900a27d8fa8cd20ceac748106788e1fe48fed9549be9e63de429f74732"
     },
     "neon-postgres": {
       "source": "neondatabase/agent-skills",

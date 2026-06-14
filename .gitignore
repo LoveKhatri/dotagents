@@ -1,0 +1,11 @@
+# Don't track cloned skill repos in the dotagents repo itself
+.agents/skills/installed/superpowers/*
+.agents/skills/installed/mattpocock/*
+.agents/skills/installed/gstack/*
+!.agents/skills/installed/superpowers/.gitkeep
+!.agents/skills/installed/mattpocock/.gitkeep
+!.agents/skills/installed/gstack/.gitkeep
+
+# OS junk
+.DS_Store
+Thumbs.db

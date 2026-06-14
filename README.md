@@ -1,112 +1,100 @@
 # dotagents
 
-Standard `.agents/` setup that I copy into every project. Contains skills, memory system, rules, and plugins — everything an AI coding agent (Claude Code, CommandCode, OpenCode) needs to be productive from day one.
+My personal `.agents/` and `.opencode/` setup — everything AI coding agents need to be productive. Designed to be cloned anywhere and symlinked into place.
 
 ## Quick Start
 
 ```bash
-# Clone this repo
 git clone https://github.com/LoveKhatri/dotagents.git ~/dotagents
 
-# In any project root:
-cp -r ~/dotagents/.agents .
-
-# Or run the setup script (clones skills from GitHub):
-cd my-project
-bash ~/dotagents/setup.sh
+# Set up global symlinks
+ln -sf ~/dotagents/agents ~/.agents
+ln -sf ~/dotagents/opencode ~/.config/opencode
 ```
 
-## What's Inside
+That's it. OpenCode now gets skills, rules, memory, and config from this repo.
+
+## Structure
 
 ```
-.agents/
-├── skills/          # Agent skills (superpowers, mattpocock, gstack)
-│   └── installed/   # Cloned skill repos go here
-├── memory/          # Session and project memory
-│   ├── daily/       # Daily session logs
-│   ├── weekly/      # Weekly summaries
-│   └── MEMORY.md    # Global accumulated memory
-├── rules/           # Domain-specific rules (semantic folders)
-│   ├── typescript/
-│   ├── testing/
-│   ├── architecture/
-│   ├── workflow/
-│   ├── code-quality/
-│   ├── git/
-│   ├── debugging/
-│   ├── documentation/
-│   └── security/
-└── plugins/         # Agent plugins/extensions
+dotagents/
+├── agents/              # Universal agent brain (works with any tool)
+│   ├── skills/          # 63 skills — all flat, all discoverable
+│   ├── rules/           # Domain-specific rules (TS, testing, git, etc.)
+│   ├── memory/          # Long-term project memory
+│   │   ├── MEMORY.md    # Accumulated project intelligence
+│   │   ├── daily/       # Per-session logs
+│   │   └── weekly/      # Weekly summaries
+│   ├── context/         # Saved contexts (context-save / context-restore)
+│   ├── learnings/       # Cross-session learnings (learn skill)
+│   └── plugins/         # Agent extensions (placeholder)
+├── opencode/            # OpenCode-specific config
+│   ├── skills -> ../agents/skills/   # Symlinked to agents
+│   ├── plugins/         # crg-plugin, etc.
+│   └── opencode.jsonc   # Provider config, models, plugins
+└── skills-lock.json     # Skill manifest (sources, hashes)
 ```
 
-## Skills
+## Skills (63 total)
 
-Three skill collections I use across projects:
+Organized by source. See `skills-lock.json` for full manifest.
 
-### obra/superpowers
-The most comprehensive collection. Includes sub-agent orchestration, TDD workflows, code review, shell mastery, and thinking/taste patterns. I install all of them — they're interconnected and hard to cleanly separate.
+| Source | Count | Notable skills |
+|--------|-------|---------------|
+| `obra/superpowers` | 14 | brainstorming, dispatching-parallel-agents, executing-plans, test-driven-development, using-superpowers |
+| `mattpocock/skills` | 10 | caveman, diagnose, grill-with-docs, handoff, improve-codebase-architecture, prototype, review, triage, zoom-out |
+| `garrytan/gstack` | 6 | careful, context-save, context-restore, cso, diagram, learn (rewritten — zero gstack deps) |
+| `anthropics/skills` | 6 | docx, frontend-design, mcp-builder, pdf, pptx, xlsx |
+| `mongodb/agent-skills` | 7 | mongodb-atlas-stream-processing, mongodb-connection, mongodb-schema-design, mongodb-search-and-ai |
+| `neondatabase/agent-skills` | 4 | neon, neon-postgres, neon-postgres-branches, neon-postgres-egress-optimizer |
+| `Leonxlnx/taste-skill` | 6 | design-taste-frontend, gpt-taste, high-end-visual-design, industrial-brutalist-ui, minimalist-ui, redesign-existing-projects |
+| Other | 3 | find-skills, shadcn, ui-ux-pro-max |
+| `local` (custom) | 2 | idea-shredder, stitch-design-taste |
+| `local` (from gstack, rewritten) | 5 | careful, context-save, context-restore, cso, diagram, learn |
 
-```bash
-git clone https://github.com/obra/superpowers.git .agents/skills/installed/superpowers
-```
+## Rules
 
-### mattpocock/skills
-TypeScript-focused. The ones I use regularly: `handoff`, `caveman`, and `grill-me`. There are others worth checking out (code review rubrics, XState patterns, API design) but I haven't fully explored them yet.
+Rules are in `agents/rules/` organized by domain. Each file is a markdown file the agent loads contextually:
 
-```bash
-git clone https://github.com/mattpocock/skills.git .agents/skills/installed/mattpocock
-```
-
-### garrytan/gstack
-Full-stack AI agent scaffolding with Google Cloud. Haven't installed this yet because setup is involved and it pushes for global installation. I might install globally or per-project depending on tool compatibility (CommandCode vs OpenCode vs Claude Code handle global skills differently).
-
-```bash
-git clone https://github.com/garrytan/gstack.git .agents/skills/installed/gstack
-```
+| Folder | Files |
+|--------|-------|
+| `typescript/` | `const-over-let.md`, `no-any.md` |
+| `testing/` | `test-naming.md`, `test-structure.md` |
+| `architecture/` | `prefer-simple.md`, `single-responsibility.md` |
+| `code-quality/` | `no-mutations.md`, `no-swallowed-errors.md` |
+| `git/` | `branch-naming.md`, `conventional-commits.md`, `small-prs.md` |
+| `security/` | `validate-boundaries.md` |
+| `debugging/` | (empty — add as needed) |
+| `documentation/` | (empty — add as needed) |
+| `workflow/` | (empty — add as needed) |
 
 ## Memory System
 
 Three layers:
 
-1. **Daily logs** (`.agents/memory/daily/YYYY-MM-DD.md`) — Session-by-session activity, decisions, discoveries
-2. **Weekly summaries** (`.agents/memory/weekly/YYYY-Www.md`) — Key outcomes from the week, distilled from dailies
-3. **Global memory** (`.agents/memory/MEMORY.md`) — Accumulated project intelligence. What we've learned, built, decided. This is the file agents reference for context.
+1. **Daily logs** (`memory/daily/YYYY-MM-DD.md`) — Session-by-session activity
+2. **Weekly summaries** (`memory/weekly/YYYY-Www.md`) — Key outcomes distilled from dailies
+3. **Global memory** (`memory/MEMORY.md`) — Accumulated project intelligence agents reference
 
-The daily → weekly → global flow prevents memory bloat. Agents read MEMORY.md for long-term context, weekly files for recent history, daily files for specifics.
+## OpenCode Config
 
-## Rules
+`opencode/opencode.jsonc` contains provider setup (CommandCode with multiple models), shell config (`zsh`), and plugin declarations.
 
-Rules are organized into semantic folders so agents can load only what's relevant to the task at hand:
+`opencode/plugins/` has the code-review-graph plugin. Add more as needed.
 
-| Folder | When it loads |
-|--------|--------------|
-| `typescript/` | Working with TypeScript files |
-| `testing/` | Writing or modifying tests |
-| `architecture/` | System design, refactoring, new features |
-| `workflow/` | CI/CD, task management, process |
-| `code-quality/` | Reviews, linting, formatting |
-| `git/` | Commits, branching, PRs |
-| `debugging/` | Bug hunts, error investigation |
-| `documentation/` | Docs, READMEs, comments |
-| `security/` | Auth, input validation, secrets |
+## Adding New Skills
 
-Files within each folder have descriptive names (`no-any.md`, `test-naming.md`, `error-boundaries.md`) so it's obvious which rules to grab.
+1. Drop `SKILL.md` into `agents/skills/<skill-name>/`
+2. Run `opencode skill add` if using the CLI, or manually add to `skills-lock.json`
+3. Works immediately — no restart needed
 
-## Plugins
+## Custom Skills
 
-For agent extensions that don't fit the skills/rules model. Currently a placeholder — populate as needed.
+These were forked from gstack and rewritten to be self-contained:
+- **careful** — Warns before destructive bash commands
+- **context-save** / **context-restore** — Save and restore working state
+- **cso** — Full security audit (secrets, CI/CD, OWASP, STRIDE)
+- **diagram** — English → mermaid diagrams (mmd + SVG + PNG)
+- **learn** — Cross-session project learnings (file-based)
 
-## Setup Script
-
-The `setup.sh` script handles:
-- Cloning all three skill repos into `.agents/skills/installed/`
-- Creating `MEMORY.md` if it doesn't exist
-- Setting up the `.gitignore`
-
-## Tools I Use This With
-
-- **CommandCode** — reads `.agents/rules/` automatically when rules are referenced
-- **Claude Code** — uses `/skill-name` with repos in the skills directory
-- **OpenCode** — similar skills/rules convention
-
-Global vs per-project: I prefer per-project because different projects need different skills and rules. But gstack's global-first design is worth evaluating.
+See their `SKILL.md` files for details.

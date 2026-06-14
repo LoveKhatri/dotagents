@@ -85,12 +85,6 @@
       "skillPath": "skills/engineering/grill-with-docs/SKILL.md",
       "computedHash": "eb0e91e84277283dc2b23ed544399e53afd6b5287e5b6929f25fe8aa608e164b"
     },
-    "gstack": {
-      "source": "garrytan/gstack",
-      "sourceType": "github",
-      "skillPath": "SKILL.md",
-      "computedHash": "57e4d464b821b0718092105b3cc7713dae6d248ec8c46de19caf764f48a41949"
-    },
     "handoff": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -336,6 +330,54 @@
       "sourceType": "github",
       "skillPath": "skills/engineering/zoom-out/SKILL.md",
       "computedHash": "8357aeaece3b709c442eab67e64b86844e05e2f1ea95b109565eba50b6def36e"
+    },
+    "careful": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/careful/SKILL.md",
+      "computedHash": "e465742e3f6cc41debcf070a907aecaabb977ddb1e433b2b388f091f6ce83e56"
+    },
+    "context-restore": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/context-restore/SKILL.md",
+      "computedHash": "0d56dcdc888f2e28dafc65b4b79a2aba53fad32f66919b64875b8f49ad75124f"
+    },
+    "context-save": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/context-save/SKILL.md",
+      "computedHash": "cc459ad53f89221ae4caa9c8cda3308194b97da3206710be76c4cdab6b39b087"
+    },
+    "cso": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/cso/SKILL.md",
+      "computedHash": "82856ede77665113ab391c433fbf20b7bb62d51a022892a9f483f50f84bfa993"
+    },
+    "diagram": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/diagram/SKILL.md",
+      "computedHash": "418a9d4c1e8739bafd944441d6d944e98745b0036a3b241e1e7aa7f3fa2ad31b"
+    },
+    "idea-shredder": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/idea-shredder/SKILL.md",
+      "computedHash": "982970c825880a547a00d58053bb067ec6b4a73a7a709d677ede192877eda557"
+    },
+    "impeccable": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/impeccable/SKILL.md",
+      "computedHash": "3fe27c07d0962c2ad23f9b2202e396561ed8f37aad8a64d334a05dbc1b61e3b8"
+    },
+    "learn": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/learn/SKILL.md",
+      "computedHash": "e6ded78d76410a6fcdf9a32c586cfe4b8d29eb9d39d347d5c8f114ac9214e0b6"
     }
   }
 }

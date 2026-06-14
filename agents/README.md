@@ -1,22 +1,22 @@
-# .agents
+# agents
 
-This directory is the brain of the AI-assisted project. Everything the agent needs to be context-aware and effective lives here.
+The universal agent directory. Everything an AI coding agent needs to be context-aware and productive.
 
-## How It Works
+## Structure
 
-1. **Skills** teach the agent new capabilities (how to do things)
-2. **Rules** constrain the agent's behavior (what to do / not do)
-3. **Memory** gives the agent long-term context (what's happened)
-4. **Plugins** extend the agent with tools and integrations
+- **skills/** — Agent skills teach capabilities (how to do things). Each skill is a directory with a `SKILL.md`. Flat layout — no nesting.
+- **rules/** — Domain-specific rules constrain behavior (what to do / not do). Organized by topic.
+- **memory/** — Long-term project memory and context. Three layers: daily, weekly, global.
+- **plugins/** — Agent extensions and plugins.
+- **context/** — Saved working contexts (used by context-save / context-restore).
+- **learnings/** — Cross-session learnings (used by the learn skill).
 
-## Agent Integration
-
-Different tools discover these differently:
+## How agents discover this
 
 | Tool | Skills | Rules | Memory |
 |------|--------|-------|--------|
-| Claude Code | `/skill-name` in `.agents/skills/` | Reads `.agents/rules/*.md` when task matches | Reads `MEMORY.md` on session start |
-| CommandCode | Skills in `~/.agents/skills/` or local `.agents/skills/` | Project-level rules auto-loaded | Taste system in `.commandcode/taste/` |
-| OpenCode | Config-based skill paths | `.cursor/rules/` or `.agents/rules/` | No built-in memory — use `MEMORY.md` |
+| OpenCode | `~/.agents/skills/<name>/SKILL.md` | `agents/rules/*.md` when task matches | `agents/memory/MEMORY.md` |
+| Claude Code | `/skill-name` in `.agents/skills/` | Reads `.agents/rules/*.md` | Reads `MEMORY.md` on start |
+| CommandCode | Skills in `~/.agents/skills/` or local `.agents/skills/` | Project-level rules auto-loaded | Taste system |
 
-Check your specific tool's docs for the exact discovery mechanism. The structure here is designed to work with all of them with minimal adaptation.
+The structure works with all of them with minimal adaptation.

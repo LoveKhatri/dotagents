@@ -7,6 +7,12 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "computedHash": "8df9b47092524833138b58682d03f2e153a242e550d1693657afdbee0cc9cdb0"
     },
+    "careful": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/careful/SKILL.md",
+      "computedHash": "e465742e3f6cc41debcf070a907aecaabb977ddb1e433b2b388f091f6ce83e56"
+    },
     "caveman": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -19,6 +25,24 @@
       "skillPath": "skills/claimable-postgres/SKILL.md",
       "computedHash": "65b0b2208ec0bdcf3b6f8254dec083017102d052e2bce55a37bca7a7b9e0b3cc"
     },
+    "context-restore": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/context-restore/SKILL.md",
+      "computedHash": "0d56dcdc888f2e28dafc65b4b79a2aba53fad32f66919b64875b8f49ad75124f"
+    },
+    "context-save": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/context-save/SKILL.md",
+      "computedHash": "cc459ad53f89221ae4caa9c8cda3308194b97da3206710be76c4cdab6b39b087"
+    },
+    "cso": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/cso/SKILL.md",
+      "computedHash": "82856ede77665113ab391c433fbf20b7bb62d51a022892a9f483f50f84bfa993"
+    },
     "design-taste-frontend": {
       "source": "Leonxlnx/taste-skill",
       "sourceType": "github",
@@ -30,6 +54,12 @@
       "sourceType": "github",
       "skillPath": "skills/engineering/diagnose/SKILL.md",
       "computedHash": "15939a26f86edec2d4862042b8564e5a062cb81d04e047a0cea6305c8830b5f5"
+    },
+    "diagram": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/diagram/SKILL.md",
+      "computedHash": "418a9d4c1e8739bafd944441d6d944e98745b0036a3b241e1e7aa7f3fa2ad31b"
     },
     "dispatching-parallel-agents": {
       "source": "obra/superpowers",
@@ -48,6 +78,60 @@
       "sourceType": "github",
       "skillPath": "skills/executing-plans/SKILL.md",
       "computedHash": "b41c919caf1bb07fbacb0e29899ac513f9eb11cd4dd695975ad352c2c03cc4d7"
+    },
+    "figma-code-connect": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-code-connect/SKILL.md",
+      "computedHash": "97115879461e3fb0766ea31d35a370e47f140c0e2896e33ccdd1f8a693e78358"
+    },
+    "figma-create-new-file": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-create-new-file/SKILL.md",
+      "computedHash": "8013ae97a1d34753bdd916225ef781500e072631ef94f7a38975fc15394f0dc2"
+    },
+    "figma-generate-design": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-generate-design/SKILL.md",
+      "computedHash": "e4cbfb6e0a6ed1607cc138d5f693257a7f06ae55b88fd38bc511ab3032675f42"
+    },
+    "figma-generate-diagram": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-generate-diagram/SKILL.md",
+      "computedHash": "94535a994b6af987fe7f313df9835d8f5cb3d96c0f343be5f7c07b06421c1e2e"
+    },
+    "figma-generate-library": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-generate-library/SKILL.md",
+      "computedHash": "da2816ebbc4f25d23563af998eb4888cb587454c6977cf0382b15eb297c6d71b"
+    },
+    "figma-swiftui": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-swiftui/SKILL.md",
+      "computedHash": "a1cb0b6966de30e4f4fe50fbc0d9e89aff8d3b1d80143cc3de09f07b7dbb6ef9"
+    },
+    "figma-use": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use/SKILL.md",
+      "computedHash": "ad6ff47710d541d77a0a276ece823bddc785697bbd6efc6a6b72c123c1d8fb78"
+    },
+    "figma-use-figjam": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use-figjam/SKILL.md",
+      "computedHash": "8dc0ca7d4b1330fe8bb0580f452d55982b5eb1792860f4d178348a261c7a9dc8"
+    },
+    "figma-use-slides": {
+      "source": "figma/mcp-server-guide",
+      "sourceType": "github",
+      "skillPath": "skills/figma-use-slides/SKILL.md",
+      "computedHash": "88b053d58ebac36768fc0191df50c46361fb890722238cf514914e43e46ef577"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -97,6 +181,18 @@
       "skillPath": "skills/soft-skill/SKILL.md",
       "computedHash": "7db385e4c5370e5a7fca9704a1361b056e4504ea6a03924bb86f33a4f00b5c73"
     },
+    "idea-shredder": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/idea-shredder/SKILL.md",
+      "computedHash": "982970c825880a547a00d58053bb067ec6b4a73a7a709d677ede192877eda557"
+    },
+    "impeccable": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/impeccable/SKILL.md",
+      "computedHash": "3fe27c07d0962c2ad23f9b2202e396561ed8f37aad8a64d334a05dbc1b61e3b8"
+    },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
       "sourceType": "github",
@@ -108,6 +204,12 @@
       "sourceType": "github",
       "skillPath": "skills/brutalist-skill/SKILL.md",
       "computedHash": "8fc355c4aadb7d29c53ca28bc41be3cd6eea765d121e3737c4dc2d0f90a8effa"
+    },
+    "learn": {
+      "source": "local",
+      "sourceType": "local",
+      "skillPath": "skills/learn/SKILL.md",
+      "computedHash": "e6ded78d76410a6fcdf9a32c586cfe4b8d29eb9d39d347d5c8f114ac9214e0b6"
     },
     "mcp-builder": {
       "source": "anthropics/skills",
@@ -330,54 +432,6 @@
       "sourceType": "github",
       "skillPath": "skills/engineering/zoom-out/SKILL.md",
       "computedHash": "8357aeaece3b709c442eab67e64b86844e05e2f1ea95b109565eba50b6def36e"
-    },
-    "careful": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/careful/SKILL.md",
-      "computedHash": "e465742e3f6cc41debcf070a907aecaabb977ddb1e433b2b388f091f6ce83e56"
-    },
-    "context-restore": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/context-restore/SKILL.md",
-      "computedHash": "0d56dcdc888f2e28dafc65b4b79a2aba53fad32f66919b64875b8f49ad75124f"
-    },
-    "context-save": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/context-save/SKILL.md",
-      "computedHash": "cc459ad53f89221ae4caa9c8cda3308194b97da3206710be76c4cdab6b39b087"
-    },
-    "cso": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/cso/SKILL.md",
-      "computedHash": "82856ede77665113ab391c433fbf20b7bb62d51a022892a9f483f50f84bfa993"
-    },
-    "diagram": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/diagram/SKILL.md",
-      "computedHash": "418a9d4c1e8739bafd944441d6d944e98745b0036a3b241e1e7aa7f3fa2ad31b"
-    },
-    "idea-shredder": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/idea-shredder/SKILL.md",
-      "computedHash": "982970c825880a547a00d58053bb067ec6b4a73a7a709d677ede192877eda557"
-    },
-    "impeccable": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/impeccable/SKILL.md",
-      "computedHash": "3fe27c07d0962c2ad23f9b2202e396561ed8f37aad8a64d334a05dbc1b61e3b8"
-    },
-    "learn": {
-      "source": "local",
-      "sourceType": "local",
-      "skillPath": "skills/learn/SKILL.md",
-      "computedHash": "e6ded78d76410a6fcdf9a32c586cfe4b8d29eb9d39d347d5c8f114ac9214e0b6"
     }
   }
 }

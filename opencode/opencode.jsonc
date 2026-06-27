@@ -66,13 +66,12 @@
   "mcp": {
     "code-review-graph": {
       "enabled": true,
+      "type": "local",
       "command": [
         "uvx",
         "code-review-graph",
         "serve"
-      ],
-      "type": "local",
-      "environment": {}
+      ]
     }
   },
 }

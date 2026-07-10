@@ -2,21 +2,22 @@
 description: Focused implementation worker for approved plans or bounded coding tasks. Executes directly, verifies work, and never delegates.
 mode: all
 model: opencode-go/minimax-m3
+variant: thinking
 temperature: 0.1
 color: "#F97316"
 permission:
-  read: allow
-  edit: allow
-  glob: allow
-  grep: allow
-  list: allow
-  bash: allow
-  lsp: allow
-  skill: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_enter: deny
+  plan_exit: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   task: deny
-  external_directory: ask
-  todowrite: allow
-  question: allow
   webfetch: ask
   websearch: ask
 ---

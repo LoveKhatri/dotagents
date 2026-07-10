@@ -2,25 +2,28 @@
 description: Read-only primary review agent for plans, PRs, and working-tree changes. Finds material bugs, regressions, security risks, and verification gaps.
 mode: primary
 model: opencode-go/glm-5.2
+variant: high
 temperature: 0.1
 color: "#EAB308"
 permission:
-  read: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_enter: deny
+  plan_exit: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   edit: deny
-  glob: allow
-  grep: allow
-  list: allow
   bash: ask
-  lsp: allow
-  skill: allow
   task:
-    "*": deny
     explore: allow
     librarian: allow
     reviewer: allow
-  external_directory: ask
-  todowrite: allow
-  question: allow
+    "*": deny
   webfetch: ask
   websearch: ask
 ---

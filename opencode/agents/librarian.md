@@ -2,23 +2,24 @@
 description: Read-only external research specialist. Use for official docs, upstream source, library behavior, version-specific APIs, and implementation examples.
 mode: subagent
 model: commandcode/deepseek/deepseek-v4-flash
+variant: high
 temperature: 0.1
 color: "#A855F7"
 permission:
-  read: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_enter: deny
+  plan_exit: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   edit: deny
-  glob: allow
-  grep: allow
-  list: allow
   task: deny
   bash: deny
-  lsp: allow
-  skill: allow
-  external_directory: ask
-  todowrite: allow
-  question: allow
-  webfetch: allow
-  websearch: allow
 ---
 
 You are read-only technical librarian. Resolve external API, upstream source, version behavior, and implementation-example questions with primary evidence.

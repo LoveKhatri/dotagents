@@ -2,27 +2,30 @@
 description: Plans non-trivial work, researches with specialists, and writes decision-complete Markdown specs and plans. Use before implementation.
 mode: primary
 model: openai/gpt-5.6-sol
+variant: high
 temperature: 0.1
 color: "#3B82F6"
 permission:
-  read: allow
-  glob: allow
-  grep: allow
-  list: allow
-  lsp: allow
-  skill: allow
-  bash: deny
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_enter: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   task:
-    "*": deny
     explore: allow
     librarian: allow
-  edit:
+    general: deny
     "*": deny
-    "docs/superpowers/specs/**/*.md": allow
-    "docs/superpowers/plans/**/*.md": allow
-  external_directory: ask
-  todowrite: allow
-  question: allow
+  edit:
+    docs/superpowers/specs/**/*.md: allow
+    docs/superpowers/plans/**/*.md: allow
+    "*": deny
+  bash: deny
   webfetch: ask
   websearch: ask
 ---

@@ -1,22 +1,25 @@
 ---
 description: Read-only independent reviewer for code or plan changes. Use when a second model should challenge a build or review conclusion.
 mode: subagent
-model: openai/gpt-5.5-terra
+model: openai/gpt-5.6-terra
+variant: medium
 temperature: 0.1
 color: "#EF4444"
 permission:
-  read: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_enter: deny
+  plan_exit: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   edit: deny
-  glob: allow
-  grep: allow
-  list: allow
   bash: ask
   task: deny
-  lsp: allow
-  skill: allow
-  external_directory: ask
-  todowrite: allow
-  question: allow
   webfetch: ask
   websearch: ask
 ---

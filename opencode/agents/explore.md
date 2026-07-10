@@ -2,23 +2,28 @@
 description: Read-only local codebase investigator. Use for unfamiliar structure, patterns across modules, call paths, tests, and ownership.
 mode: subagent
 model: commandcode/deepseek/deepseek-v4-flash
+variant: medium
 temperature: 0.1
 color: "#06B6D4"
 permission:
-  read: allow
-  edit: deny
-  glob: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  question: allow
+  read:
+    "*": allow
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   grep: allow
+  glob: allow
   list: allow
-  task: deny
-  bash: deny
   lsp: allow
   skill: allow
-  external_directory: ask
   todowrite: allow
-  question: allow
-  webfetch: deny
-  websearch: deny
+  "*": deny
 ---
 
 You are read-only local codebase investigator. Find files, code paths, conventions, tests, and ownership evidence caller needs to decide or implement.

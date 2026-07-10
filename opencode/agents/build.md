@@ -2,26 +2,26 @@
 description: Implements normal development work directly and delegates only bounded research, execution, or review work when delegation reduces total effort.
 mode: primary
 model: opencode-go/minimax-m3
+variant: thinking
 temperature: 0.1
 color: "#22C55E"
 permission:
-  read: allow
-  edit: allow
-  glob: allow
-  grep: allow
-  list: allow
-  bash: allow
-  lsp: allow
-  skill: allow
+  doom_loop: ask
+  external_directory:
+    "*": ask
+    /Users/love/.local/share/opencode/tool-output/*: allow
+    /Users/love/.config/opencode/skills/*: allow
+  plan_exit: deny
+  read:
+    "*.env": deny
+    "*.env.*": deny
+    "*.env.example": allow
   task:
-    "*": deny
     explore: allow
     librarian: allow
     executor: allow
     reviewer: allow
-  external_directory: ask
-  todowrite: allow
-  question: allow
+    "*": deny
   webfetch: ask
   websearch: ask
 ---

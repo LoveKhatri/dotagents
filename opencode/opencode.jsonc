@@ -4,12 +4,13 @@
   ],
   "$schema": "https://opencode.ai/config.json",
   "shell": "zsh",
+  "default_agent": "plan",
   "provider": {
     "commandcode": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "CommandCode",
       "options": {
-        "baseURL": "http://localhost:55990/v1"
+        "baseURL": "http://100.101.41.42:55990/v1"
       },
       "models": {
         "deepseek/deepseek-v4-pro": {

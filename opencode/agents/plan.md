@@ -25,7 +25,6 @@ permission:
     docs/superpowers/specs/**/*.md: allow
     docs/superpowers/plans/**/*.md: allow
     "*": deny
-  bash: deny
   webfetch: ask
   websearch: ask
 ---

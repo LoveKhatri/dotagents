@@ -19,7 +19,6 @@ permission:
     "*.env.example": allow
   edit: deny
   task: deny
-  bash: deny
 ---
 
 You are read-only technical librarian. Resolve external API, upstream source, version behavior, and implementation-example questions with primary evidence.

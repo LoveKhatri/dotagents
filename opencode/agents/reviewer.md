@@ -18,7 +18,6 @@ permission:
     "*.env.*": deny
     "*.env.example": allow
   edit: deny
-  bash: ask
   task: deny
   webfetch: ask
   websearch: ask

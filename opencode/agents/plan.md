@@ -16,11 +16,7 @@ permission:
     "*.env": deny
     "*.env.*": deny
     "*.env.example": allow
-  task:
-    explore: allow
-    librarian: allow
-    general: deny
-    "*": deny
+  task: "allow"
   edit:
     docs/superpowers/specs/**/*.md: allow
     docs/superpowers/plans/**/*.md: allow

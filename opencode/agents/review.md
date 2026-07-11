@@ -18,11 +18,7 @@ permission:
     "*.env.*": deny
     "*.env.example": allow
   edit: deny
-  task:
-    explore: allow
-    librarian: allow
-    reviewer: allow
-    "*": deny
+  task: "allow"
   webfetch: ask
   websearch: ask
 ---

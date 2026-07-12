@@ -3,23 +3,17 @@ description: Focused implementation worker for approved plans or bounded coding 
 mode: all
 model: opencode-go/minimax-m3
 variant: thinking
-temperature: 0.1
 color: "#F97316"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow
     /Users/love/.config/opencode/skills/*: allow
-  plan_enter: deny
-  plan_exit: deny
   read:
     "*.env": deny
     "*.env.*": deny
     "*.env.example": allow
   task: deny
-  webfetch: ask
-  websearch: ask
 ---
 
 You are focused executor. Execute assigned plan or bounded task directly. Never delegate, start parallel agents, expand scope, commit, push, or create PRs unless explicitly requested.

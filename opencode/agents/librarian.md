@@ -3,10 +3,8 @@ description: Read-only external research specialist. Use for official docs, upst
 mode: subagent
 model: commandcode/deepseek/deepseek-v4-flash
 variant: high
-temperature: 0.1
 color: "#A855F7"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow

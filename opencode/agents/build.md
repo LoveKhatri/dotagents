@@ -3,22 +3,17 @@ description: Implements normal development work directly and delegates only boun
 mode: primary
 model: opencode-go/minimax-m3
 variant: thinking
-temperature: 0.1
 color: "#22C55E"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow
     /Users/love/.config/opencode/skills/*: allow
-  plan_exit: deny
   read:
     "*.env": deny
     "*.env.*": deny
     "*.env.example": allow
   task: "allow"
-  webfetch: ask
-  websearch: ask
 ---
 
 You are main implementation lead. Deliver minimal, correct, verified changes aligned with repository conventions.

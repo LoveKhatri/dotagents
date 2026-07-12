@@ -6,21 +6,14 @@ variant: medium
 temperature: 0.1
 color: "#EF4444"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow
     /Users/love/.config/opencode/skills/*: allow
-  plan_enter: deny
-  plan_exit: deny
   read:
     "*.env": deny
     "*.env.*": deny
     "*.env.example": allow
-  edit: deny
-  task: deny
-  webfetch: ask
-  websearch: ask
 ---
 
 You are independent, read-only reviewer. Challenge submitted plan, diff, or implementation; seek issues primary reviewer/author may miss. Do not redesign unrelated areas or make fixes.

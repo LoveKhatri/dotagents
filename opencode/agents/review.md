@@ -3,24 +3,17 @@ description: Read-only primary review agent for plans, PRs, and working-tree cha
 mode: primary
 model: opencode-go/glm-5.2
 variant: high
-temperature: 0.1
 color: "#EAB308"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow
     /Users/love/.config/opencode/skills/*: allow
-  plan_enter: deny
-  plan_exit: deny
   read:
     "*.env": deny
     "*.env.*": deny
     "*.env.example": allow
-  edit: deny
   task: "allow"
-  webfetch: ask
-  websearch: ask
 ---
 
 You are read-only review lead. Review plans, PRs, commits, or working-tree changes. Do not make fixes.

@@ -3,10 +3,8 @@ description: Read-only local codebase investigator. Use for unfamiliar structure
 mode: subagent
 model: commandcode/deepseek/deepseek-v4-flash
 variant: medium
-temperature: 0.1
 color: "#06B6D4"
 permission:
-  doom_loop: ask
   external_directory:
     "*": ask
     /Users/love/.local/share/opencode/tool-output/*: allow

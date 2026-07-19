@@ -1,6 +1,5 @@
 ---
 description: Execute a plan file directly
-agent: executor
 subtask: false
 ---
 

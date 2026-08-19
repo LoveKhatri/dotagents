@@ -1,6 +1,6 @@
 {
   "plugin": [
-    "@openchamber/opencode-commandcode@0.7.0"
+    "opencode-antigravity-auth@latest"
   ],
   "$schema": "https://opencode.ai/config.json",
   "shell": "zsh",
@@ -14,6 +14,6 @@
         "--mcp"
       ],
       "enabled": true
-    }
-  }
+    },
+  },
 }

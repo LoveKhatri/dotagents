@@ -1,7 +1,7 @@
 ---
 description: Read-only local codebase investigator. Use for unfamiliar structure, patterns across modules, call paths, tests, and ownership.
 mode: subagent
-model: commandcode/deepseek/deepseek-v4-pro
+model: command-code/deepseek/deepseek-v4-flash
 variant: max
 color: "#06B6D4"
 permission:

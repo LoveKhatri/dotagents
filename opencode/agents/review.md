@@ -1,7 +1,7 @@
 ---
 description: Read-only primary review agent for plans, PRs, and working-tree changes. Finds material bugs, regressions, security risks, and verification gaps.
 mode: primary
-model: opencode-go/glm-5.2
+model: openai/gpt-5.6-sol
 variant: high
 color: "#EAB308"
 permission:

@@ -1,8 +1,8 @@
 ---
 description: Focused implementation worker for approved plans or bounded coding tasks. Executes directly, verifies work, and never delegates.
 mode: all
-model: opencode-go/minimax-m3
-variant: thinking
+model: openai/gpt-5.6-terra
+variant: medium
 color: "#F97316"
 permission:
   external_directory:

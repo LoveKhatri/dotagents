@@ -1,8 +1,9 @@
 ---
-description: Read-only external research specialist. Use for official docs, upstream source, library behavior, version-specific APIs, and implementation examples.
+description: Read-only external research specialist. Use for official docs,
+  upstream source, library behavior, version-specific APIs, and implementation
+  examples.
 mode: subagent
-model: commandcode/deepseek/deepseek-v4-pro
-variant: max
+model: command-code/deepseek/deepseek-v4-flash
 color: "#A855F7"
 permission:
   external_directory:
